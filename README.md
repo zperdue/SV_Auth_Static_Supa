@@ -1,38 +1,24 @@
-# sv
+# Boilerplate: Svelte 5 Static Auth w/SupaBase + Google OAuth
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Boilerplate code for integrating client-side authorization in SvelteKit 5 w/Email (SupaBase) and Google OAuth.
 
-## Creating a project
+Includes:
+- Shadcn-svelte for UI
+- Superforms + Zod
+- Tailwindcss 3
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Install
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Clone the repo, then:
 
 ```bash
+# install node dependencies
+npm install
+
+# start up dev server
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## Notes
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Used Tailwindcss 3 (instead of 4) due to Shadcn-svelte not seeming to play nice with Tailwindcss 4. Once resolved, should update to Tailwindcss 4.
